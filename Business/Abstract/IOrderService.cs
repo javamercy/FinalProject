@@ -1,14 +1,23 @@
-﻿using Entities.Concrete;
+﻿using Core.Utilities.Results;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Business.Abstract
 {
-   public interface IOrderService
+    public interface IOrderService
     {
-        List<Order> GetAll();
+        IResult Add(Order order);
 
-        void Add(Order order);
+        IResult Update(Order order);
+
+        IResult Delete(Order order);
+
+        IDataResult<List<Order>> GetAll();
+
+        IDataResult<Order> GetById(int id);
+
+
     }
 }
