@@ -12,8 +12,12 @@ namespace Business.Constants
 
         public static string MaintenanceTime = "Bakım Arası";
 
-        internal static string ProductsListed = "Ürünler listelendi";
+        public static string ProductsListed = "Ürünler listelendi";
 
-        internal static string ProductsListedByCategoryId ="Ürünler kategori id'ye göre listelendi.";
+        public static string ProductsListedByCategoryId = "Ürünler kategori id'ye göre listelendi.";
+
+        public static string ProductNameAlreadyExists = "Aynı isimde bir ürün zaten var.";
+        public static string ProductCountByCategoryError = "Aynı kategoride ürün sayısı 10'u geçemez.";
+        public static string CategoryCountLimitExceeded = "Kategori sayısı limiti aşıldığı için yeni ürün eklenemez.";
     }
 }
